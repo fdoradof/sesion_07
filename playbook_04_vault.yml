@@ -1,0 +1,28 @@
+---
+- name: "Demostracion del vault"
+  hosts: nodos
+  vars_files:
+    - vars/vault-vars01.yml
+  
+  tasks:
+    - name: "Imprimir por pantalla los datos de alicia"
+      debug:
+        var: "{{ alicia[0] }}"
+
+    
+    - name: "Imprimir por pantalla los datos de samuel"
+      debug:
+        var: "{{ samuel[0] }}"
+
+    
+    - name: "Creacion de un fichero de datos"
+      file:
+        path: /tmp/datos_vault.txt
+        state: touch
+    
+    - name: "Imprimir rutas de los sevidores web"
+      lineinfile:
+        path: /tmp/datos_vault.txt
+        line: "{{ item }}"
+      loop: "{{ rutas }}"
+

@@ -1,0 +1,17 @@
+rutas:
+  - "/var/www/html/wweb01"
+  - "/var/www/html/wweb02"
+  - "/var/www/html/wweb03"
+  - "/var/www/html/wweb04"
+  - "/var/www/html/wweb05"
+
+
+alicia:
+  - alicia
+  - "ruiz sanchez"
+  - "9999999"
+
+samuel:
+  - samuel
+  - "contreras benitez"
+  - "8888888"

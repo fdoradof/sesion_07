@@ -1,0 +1,10 @@
+---
+- name: "Demostracion de lookups"
+  hosts: nodos
+  tasks:
+    - debug:
+        var: test_dict
+
+    - debug:
+        var: dict_content
+  

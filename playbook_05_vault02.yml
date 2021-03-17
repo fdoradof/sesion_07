@@ -1,0 +1,11 @@
+---
+- name: "Demostracion del uso del ansible-vault"
+  hosts: nodos
+  tasks:
+    - name: "Generate la password del usuario en sha512"
+      set_fact:
+
+    - name: "Creacion del usuario"
+      user:
+        name: "{{ new_user_name }}"
+        password: "{{ new_hash_pass }}"
