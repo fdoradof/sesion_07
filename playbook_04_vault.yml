@@ -12,6 +12,10 @@
     - name: "Imprimir por pantalla los datos de samuel"
       debug:
 
+
+    - name: "Imprimir por pantalla una variable interna encriptada con vault"
+      debug:
+
     
     - name: "Creacion de un fichero de datos"
       file:
