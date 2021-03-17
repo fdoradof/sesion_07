@@ -6,7 +6,7 @@
       debug:
         msg: "Vamos a dar comienzo con la implementacion del playbook"
       tags:
-        - debug
+        - [debug, apache]
 
     - name: "Imprimir las caracteristicas del servidor"
       setup:
